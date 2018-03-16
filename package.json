@@ -1,0 +1,36 @@
+{
+  "name": "sound-waveform",
+  "version": "0.1.0",
+  "description": "wip",
+  "main": "src",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "budo .:bundle.js --live --port 8080 -- -t envify -t sheetify",
+    "build": "browserify index.js -t envify -t sheetify > bundle.js",
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trainkit/sound-waveform.git"
+  },
+  "keywords": [
+    "waveform",
+    "sound",
+    "audio",
+    "player",
+    "component",
+    "nanocomponent"
+  ],
+  "author": "kareniel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/trainkit/sound-waveform/issues"
+  },
+  "homepage": "https://github.com/trainkit/sound-waveform#readme",
+  "devDependencies": {
+    "trainkit-dev": "^0.1.0"
+  },
+  "dependencies": {
+    "nanocomponent": "^6.5.1"
+  }
+}
